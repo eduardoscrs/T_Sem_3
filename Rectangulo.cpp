@@ -32,15 +32,20 @@ public:
     }
 };    
 
-int main(){
+int main() {
     double baseUsuario, alturaUsuario;
     std::cout << "Ingrese la base del rectangulo: ";
     std::cin >> baseUsuario;
     std::cout << "Ingrese la altura del rectangulo: ";
     std::cin >> alturaUsuario;
-
-    Rectangulo rectangulo(baseUsuario, alturaUsuario);
-    rectangulo.imprimir();
+    
+    if (baseUsuario == alturaUsuario) {
+        std::cout << "La base y la altura son iguales, es un cuadrado" << std::endl;
+        return 1;
+    } else {
+        Rectangulo rectangulo(baseUsuario, alturaUsuario);
+        rectangulo.imprimir();
+    }
 
     return 0;
 }
