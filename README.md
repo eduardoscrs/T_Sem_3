@@ -78,3 +78,39 @@ Fuera de la clase, instancia un objeto de clase Rectangulo, asignándole los val
 Muestra por pantalla el área de ese rectángulo.
 
 Muestra por pantalla el perímetro de ese rectángulo.
+Ejercicios parte 3
+Objetos interactivos
+Puedes realizarlo con lenguaje Java o C++. En ninguno de los lenguajes puedes usar vectores o listas.
+Nota: Esto es un vector de string en C++:
+
+std::vector<std::string>
+Esto es una lista de string en Java:
+
+ArrayList<String> stringList;
+La siguiente actividad no reproducirá un sonido real, solo mostrará el nombre de la canción.
+Realiza un simulador de reproductor de sonido. Para esto, deberás crear una clase llamada Playlist que cumpla con lo siguiente:
+
+En cuanto a los atributos, deben al menos existir los siguientes:
+
+Debe poseer un atributo "nombre". Este será la referencia al nombre de la lista de reproducción.
+Un atributo que contendrá las canciones; se espera que sea un arreglo de strings.
+Un atributo que representará el estado. Los estados pueden ser: reproduciendo, pausa y detenido.
+Un atributo que indica el índice de la canción que se está reproduciendo.
+En cuanto a los métodos, deben al menos existir los siguientes:
+
+Un método que permitirá añadir una canción.
+Un método que permitirá eliminar una canción.
+Un método que permitirá mostrar todas las canciones.
+Un método que comienza a reproducir una canción.
+Un método que permitirá seleccionar una canción a reproducir.
+Un método que permitirá pausar una canción.
+Un método que permitirá detener la reproducción.
+Un método que pasará a la siguiente canción.
+Un método que permitirá retroceder a la canción anterior.
+Un método que permitirá reproducir una canción aleatoria (si ya está reproduciendo una canción, al seleccionar una canción aleatoria no puede reproducir la que ya se estaba reproduciendo).
+Un método que permite ver el estado de la playlist.
+Un método que permite ver la canción que se está reproduciendo.
+Fuera de la clase, debes instanciar una lista y luego debes iniciar un ciclo while. Al usuario se le darán alternativas para interactuar con la playlist. Debe haber una opción en el while que permite terminar el programa.
+
+Debes destruir las instancias de objetos creadas de forma manual. Si es necesario, también debes liberar memoria antes de que el programa finalice por completo.
+
